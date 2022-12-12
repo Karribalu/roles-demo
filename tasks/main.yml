@@ -1,0 +1,6 @@
+---
+# tasks file for bala-role
+- name: Install httpd package
+  yum: name={{package_name}} state=latest
+  notify:
+  - restart apache
